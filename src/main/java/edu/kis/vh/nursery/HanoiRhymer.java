@@ -16,3 +16,7 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
         }
     }
 }
+
+// alt + <- oraz alt + ->
+// w IntelliJ IDEA te skróty klawiszowe powodują zmianę podglądu na plik po prawo lub po lewo
+// spośród tych otworzonych w edytorze
