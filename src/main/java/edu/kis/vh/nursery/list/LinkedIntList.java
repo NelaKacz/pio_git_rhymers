@@ -3,7 +3,6 @@ package edu.kis.vh.nursery.list;
 class LinkedIntList {
 
     Node last;
-    int i;
 
     public void push(int i) {
         if (last == null) {
@@ -13,10 +12,6 @@ class LinkedIntList {
             last.next.prev = last;
             last = last.next;
         }
-    }
-
-    public boolean isEmpty() {
-        return last == null;
     }
 
     public boolean isFull() {
@@ -39,4 +34,7 @@ class LinkedIntList {
         return ret;
     }
 
+    private boolean isEmpty() {
+        return last == null;
+    }
 }
