@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.list;
 
-public class LinkedIntList {
+class LinkedIntList {
 
     Node last;
     int i;
