@@ -1,17 +1,22 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-int totalRejected = 0;
+    private int totalRejected = 0;
 
-	public int reportRejected() {
-		return totalRejected;
-	}
+    int reportRejected() {
+        return totalRejected;
+    }
 
-	public void countIn(int in) {
-	if (!callCheck() && in > peekaboo())
-			totalRejected++;
-			else
-				super.countIn(in);
-	}
+    public void countIn(int in) {
+        if (!callCheck() && in > peekaboo()) {
+            totalRejected++;
+        } else {
+            super.countIn(in);
+        }
+    }
 }
+
+// alt + <- oraz alt + ->
+// w IntelliJ IDEA te skróty klawiszowe powodują zmianę podglądu na plik po prawo lub po lewo
+// spośród tych otworzonych w edytorze
