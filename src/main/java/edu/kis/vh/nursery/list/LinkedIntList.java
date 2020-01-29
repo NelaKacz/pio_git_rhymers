@@ -10,10 +10,21 @@ class Node {
     }
 }
 
+/**
+ * Linked List on Int elements
+ */
 class LinkedIntList {
 
+    /**
+     * Reference to last element in the list
+     */
     Node last;
 
+    /**
+     * Adds a new element on the top of the list
+     *
+     * @param i - new element value
+     */
     public void push(int i) {
         if (last == null) {
             last = new Node(i);
@@ -24,10 +35,20 @@ class LinkedIntList {
         }
     }
 
+    /**
+     * Checks if the linked list is full
+     *
+     * @return boolean - if full
+     */
     public boolean isFull() {
         return false;
     }
 
+    /**
+     * Gets the last element of the linked list
+     *
+     * @return element value
+     */
     public int top() {
         if (isEmpty()) {
             return -1;
@@ -35,6 +56,11 @@ class LinkedIntList {
         return last.value;
     }
 
+    /**
+     * Deletes the last element from the linked list
+     *
+     * @return last element value
+     */
     public int pop() {
         if (isEmpty()) {
             return -1;
@@ -44,6 +70,11 @@ class LinkedIntList {
         return ret;
     }
 
+    /**
+     * Checks if the linked list is empty
+     *
+     * @return boolean - if empty
+     */
     private boolean isEmpty() {
         return last == null;
     }
